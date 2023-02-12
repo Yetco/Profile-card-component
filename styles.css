@@ -1,0 +1,193 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  /* height: 100%; */
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 2rem; */
+  /* flex-direction: column; */
+}
+
+main {
+  margin: 0 auto;
+}
+
+.card {
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 10px;
+  max-width: 360px;
+  overflow: hidden;
+  /* box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.1); */
+}
+
+h1 {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+
+.info {
+  padding: 3rem 0;
+  margin-bottom: -1.5rem;
+  /* display: grid; */
+  /* gap: 1rem; */
+  /* padding: 1.5rem 2rem; */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 1rem;
+}
+
+span {
+  font-size: 18px;
+  color: hsl(0, 0%, 59%);
+  margin-left: 0.5rem;
+  font-weight: 700;
+}
+
+.img-container {
+  background-image: url(images/bg-pattern-card.svg);
+  background-size: cover;
+  width: 375px;
+  height: 140px;
+  border-radius: 10px 10px 0 0;
+  /* border: 1px solid white; */
+  padding-top: 1.5rem;
+}
+
+.blue-img {
+  /* margin: 0 auto; */
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 100px;
+  /* height: 100px; */
+  overflow: hidden;
+  margin: 65px auto -30px auto;
+}
+
+.london {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 700;
+}
+
+hr {
+  margin-top: 2rem;
+  height: 1px;
+  background-color: hsl(0, 0%, 85%);
+  border: none;
+}
+
+.flex-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  /* padding: 1.5rem 2rem; */
+}
+
+.col {
+  margin-top: 2rem;
+}
+
+.col p:first-child {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.col p:nth-child(2) {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#name {
+  color: red;
+}
